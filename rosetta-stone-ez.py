@@ -228,6 +228,7 @@ class RosettaStone:
         count_lessons = 0
         for course in self.courses:
             count_lessons += len(self.courses[course]['lessons'])
+        print(f"➖ Total of {count_lessons} lessons")
         self.hours_per_lesson = self.hours_todo / count_lessons
 
     def _get_answer(self, hours: float, data: dict) -> dict:
